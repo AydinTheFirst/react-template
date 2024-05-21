@@ -5,7 +5,6 @@ import { Provider } from "@/providers";
 
 import "@/styles/tailwind.css";
 import "@/styles/index.css";
-import "@/styles/bs.css";
 
 import { AppRoutes } from "@/routers/Routes";
 
