@@ -1,27 +1,16 @@
+import config from "@/config";
 import axios from "axios";
 import { toast } from "sonner";
 
-const API = import.meta.env.VITE_API || "http://localhost:3000";
-
 const http = axios.create({
-  baseURL: API,
+  baseURL: config.BACKEND + "/api",
   timeout: 10000,
   headers: {
-    Authorization: localStorage.getItem("token") || "Bearer token",
+    Authorization: `Bearer ${localStorage.getItem("token")}`,
   },
 });
 
 export const fetcher = (url: string) => http.get(url).then((res) => res.data);
-
-export const asyncRedirect = async (url: string) => {
-  toast.success("Success! Redirecting...", {
-    description: `You will be redirected to ${url} in 3 seconds.`,
-  });
-
-  setTimeout(() => {
-    window.location.href = url;
-  }, 3000);
-};
 
 export const httpError = (error: any) => {
   if (error.response.status === 401) {

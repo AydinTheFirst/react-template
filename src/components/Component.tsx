@@ -11,19 +11,23 @@ export const Component = ({ children }: { children: React.ReactNode }) => {
     },
     {
       name: "Login",
-      path: "/auth/login",
+      path: "/login",
     },
     {
       name: "Register",
-      path: "/auth/register",
+      path: "/register",
     },
     {
       name: "Dashboard",
       path: "/dashboard",
     },
     {
-      name: "Settings",
+      name: "Users",
       path: "/dashboard/users",
+    },
+    {
+      name: "404",
+      path: "/404",
     },
   ];
 
