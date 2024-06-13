@@ -1,8 +1,8 @@
-import { Section } from "@/components";
+import { Section } from "@/components/Section";
 import { Button } from "@nextui-org/react";
 import { Link } from "react-router-dom";
 
-export const NotFound = () => {
+const NotFound = () => {
   return (
     <Section>
       <h1 className="bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center text-4xl font-bold text-transparent md:text-7xl">
@@ -16,3 +16,5 @@ export const NotFound = () => {
     </Section>
   );
 };
+
+export default NotFound;

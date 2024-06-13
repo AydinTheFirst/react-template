@@ -1,9 +1,9 @@
-import { Section } from ".";
+import { Section } from "./Section";
 import { useLocation, Link } from "react-router-dom";
 import { Breadcrumbs, BreadcrumbItem, Button } from "@nextui-org/react";
 import { toast } from "sonner";
 
-export const Component = () => {
+export const Component = ({ children }: { children: React.ReactNode }) => {
   const pages = [
     {
       name: "Home",
@@ -59,6 +59,8 @@ export const Component = () => {
       <div>
         <Button onClick={handleClick}>Trigger Toast</Button>
       </div>
+      <br />
+      {children}
       <br />
       <h2 className="text-center text-xl font-bold">
         <Nav />

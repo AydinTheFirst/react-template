@@ -1,20 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import { Provider } from "@/providers";
-
 import "@/styles/tailwind.css";
 import "@/styles/index.css";
 
-import { AppRoutes } from "@/routers/Routes";
+import { Provider } from "@/providers";
 
-import "@preact/signals-react/auto";
+import { Routes } from "@generouted/react-router";
+
 import { Toaster } from "@/components/Toaster";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <Provider>
-      <AppRoutes />
+      <Routes />
       <Toaster />
     </Provider>
   </React.StrictMode>,

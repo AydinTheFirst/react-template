@@ -1,5 +1,5 @@
-import { Component } from "@/components";
-
-export const Users = () => {
-  return <Component />;
+const Users = () => {
+  return <>Users</>;
 };
+
+export default Users;
