@@ -52,7 +52,9 @@ export const Component = ({ children }: { children: React.ReactNode }) => {
 
   const handleClick = () => {
     const isError = Math.random() > 0.5;
-    toast(isError ? "An error occurred" : "Success!");
+    toast[isError ? "error" : "success"](
+      isError ? "An error occurred" : "Success!",
+    );
   };
   return (
     <Section>
