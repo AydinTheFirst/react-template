@@ -1,7 +1,5 @@
-import { Component } from "@/components/Component";
-
 const Login = () => {
-  return <Component />;
+  return <>Login</>;
 };
 
 export default Login;

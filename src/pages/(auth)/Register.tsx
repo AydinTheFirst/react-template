@@ -1,7 +1,5 @@
-import { Component } from "@/components/Component";
-
 const Register = () => {
-  return <Component />;
+  return <>Register</>;
 };
 
 export default Register;
