@@ -8,8 +8,7 @@ export type Path =
   | `/Login`
   | `/Register`
   | `/dashboard`
-  | `/dashboard/Users`
-  | `/providers/Provider`;
+  | `/dashboard/Users`;
 
 export type Params = {};
 
