@@ -4,7 +4,7 @@ import ReactDOM from "react-dom/client";
 import "@/styles/tailwind.css";
 import "@/styles/index.css";
 
-import { Provider } from "@/providers";
+import { Provider } from "@/pages/providers";
 
 import { Routes } from "@generouted/react-router";
 
