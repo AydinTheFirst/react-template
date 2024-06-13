@@ -14,7 +14,6 @@
     "@generouted/react-router": "^1.19.5",
     "@nextui-org/react": "^2.2.10",
     "axios": "^1.6.8",
-    "clsx": "^2.1.0",
     "framer-motion": "^11.0.20",
     "next-themes": "^0.2.1",
     "react": "^18.2.0",
@@ -22,8 +21,7 @@
     "react-icons": "^5.0.1",
     "react-router-dom": "^6.22.3",
     "sonner": "^1.4.41",
-    "swr": "^2.2.5",
-    "tailwind-merge": "^2.2.2"
+    "swr": "^2.2.5"
   },
   "devDependencies": {
     "@types/node": "^20.11.30",
